@@ -1,208 +1,217 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Sergio López Aguado</title>
+    <meta name="description"
+        content="Currículum Vitae y Portfolio de Sergio López Aguado. Desarrollador Web y Gestión Administrativa.">
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1JH2H4H5H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Y1JH2H4H5H');
+    </script>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-
-<header>
-    <nav class="barra_navegacion">
-        <div class="logo">Sergio López Aguado</div>
-        <ul class="menu">
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">SL</a>
+        <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Perfil profesional</a></li>
+            <li><a href="#sobre-mi">Perfil</a></li>
             <li><a href="#competencias">Competencias</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#formacion">Formación</a></li>
             <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="https://github.com/SergioLA7?tab=repositories" target="_blank">GitHub</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+         </ul>
+     </nav>
 
-<main>
+    <main class="container">
 
-    <!-- HERO MODERNO -->
-    <section id="inicio" class="hero-card">
-        <div class="hero-contenido">
-
+        <!-- HERO MODERNO -->
+        <section id="inicio" class="hero seccion">
             <div class="hero-texto">
-                <h1>Hola, soy <span>Sergio López Aguado</span></h1>
+                <h1>Hola, soy <br><span>Sergio López Aguado</span></h1>
                 <p class="hero-descripcion">
-                    Estudiante de Diseño de Aplicaciones Web.  
-                    Profesor de Inglés con experiencia en gestión,
-                    atención al cliente y ámbito judicial.
+                    Técnico Superior en Desarrollo de Aplicaciones Web (DAW) y Graduado en Educación. Profesional
+                    polivalente con experiencia en gestión administrativa judicial, atención al cliente y desarrollo
+                    web.
+                </p>
+                <div class="hero-actions" style="flex-wrap: wrap;">
+                    <a href="proyectos.html" class="btn btn-primary btn-lg">🚀 Ver mis proyectos</a>
+                    <a href="CV_Sergio_Lopez_Aguado.pdf" download="CV_Sergio_Lopez_Aguado.pdf"
+                        class="btn btn-secondary btn-lg">📄 Descargar CV</a>
+                    <a href="mailto:sergiolopezaguado.granada@gmail.com" class="btn btn-secondary btn-lg">✉️
+                        Contactar</a>
+                </div>
+             </div>
+            <div class="hero-imagen">
+                <img src="assets/foto.jpg" alt="Foto de perfil de Sergio López Aguado">
+            </div>
+        </section>
+
+        <!-- PERFIL PROFESIONAL -->
+        <section id="sobre-mi" class="seccion">
+            <h2 class="section-title">Perfil profesional</h2>
+            <div class="card">
+                <p style="margin-bottom: 1rem;">
+                    Versátil profesional con una sólida base en gestión y atención al cliente, orientado a resultados y
+                    al servicio. Mi experiencia incluye roles como <strong>Auxiliar Administrativo</strong> en el ámbito
+                    judicial y en el cuidado de personas mayores.
+                </p>
+                <p style="margin-bottom: 1rem;">
+                    Destaco por mi capacidad para coordinar operaciones diarias, gestionar inventarios y colaborar con
+                    otros profesionales. Mi formación en <strong>Desarrollo de Videojuegos</strong>, <strong>SQL (IBM
+                        SkillsBuild)</strong>, <strong>Maestro en Educación Primaria</strong>, y con especialización en
+                    <strong>Inglés (B2)</strong> refuerza mi adaptación a entornos dinámicos.
+                </p>
+                <p>
+                    Titulado en el <strong>C.F.G.S. de Desarrollo de Aplicaciones Web (DAW)</strong>, con una sólida
+                    base técnica en <strong>SQL, Python, PHP, HTML5, CSS3 y JavaScript</strong>.
                 </p>
             </div>
+        </section>
 
-            <div class="hero-imagen">
-                <div class="marco-imagen">
-                    <img src="1.jpg" alt="Foto de perfil de Sergio López Aguado">
+        <!-- COMPETENCIAS -->
+        <section id="competencias" class="seccion">
+            <h2 class="section-title">Competencias Técnicas</h2>
+            <div class="grid-4">
+                <div class="card text-center">
+                    <img src="assets/iconos/15.png" alt="PHP" class="card-icon">
+                    <h3>PHP</h3>
+                    <div class="badges-container" style="justify-content: center;"><span class="badge">Backend</span>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img src="assets/iconos/9.png" alt="SQL" class="card-icon">
+                    <h3>SQL</h3>
+                    <div class="badges-container" style="justify-content: center;"><span class="badge">Bases de
+                            datos</span></div>
+                </div>
+                <div class="card text-center">
+                    <img src="assets/iconos/10.png" alt="Python" class="card-icon">
+                    <h3>Python</h3>
+                    <div class="badges-container" style="justify-content: center;"><span class="badge">Backend</span>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img src="assets/iconos/11.png" alt="HTML" class="card-icon">
+                    <h3>HTML5 & CSS3</h3>
+                    <div class="badges-container" style="justify-content: center;"><span class="badge">Frontend</span>
+                    </div>
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <!-- PERFIL PROFESIONAL -->
-    <section id="sobre-mi" class="seccion">
-        <h2>Perfil profesional</h2>
-
-        <div class="sobre-mi">
-            <p>
-                Versátil profesional con una sólida base en gestión y atención al cliente,
-                orientado a resultados y al servicio. Mi experiencia incluye roles como
-                <strong>Auxiliar Administrativo</strong> en el ámbito judicial y en el cuidado de personas mayores.
-            </p><br>
-
-            <p>
-                Destaco por mi capacidad para coordinar operaciones diarias, gestionar inventarios
-                y colaborar con otros profesionales. Mi formación en <strong>Desarrollo de Videojuegos</strong>,<strong>SQL (IBM SkillsBuild)</strong>,<strong> Maestro en Educación Primaria</strong>,
-                y  con especialización en <strong>Inglés (B2)</strong> refuerza
-                mi adaptación a entornos dinámicos.
-            </p><br>
-
-            <p>
-                Actualmente curso una <strong>Formación Profesional</strong> en <strong>Diseño de Aplicaciones Web (2025)</strong>,
-                con el objetivo de ampliar mis conocimientos en <strong>SQL, Python y HTML</strong>.
-            </p>
-        </div>
-    </section>
-
-    <!-- COMPETENCIAS -->
-    <section id="competencias" class="seccion">
-        <h2>Competencias</h2>
-
-        <div class="competencias">
-
-            <div class="competencia">
-                <img src="iconos/8.png" alt="Lexnet">
-                <div class="barra">
-                    <div class="progreso">Lexnet Justicia · 80%</div>
+            <div class="card" style="margin-top: 2rem;">
+                <h3 style="margin-bottom: 1rem;">Otras herramientas y habilidades</h3>
+                <div class="badges-container">
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Microsoft Office</span>
+                    <span class="badge">Gestión Documental</span>
+                    <span class="badge">Trabajo en Equipo</span>
+                    <span class="badge">Atención al Cliente</span>
+                    <span class="badge">Lexnet Justicia</span>
                 </div>
             </div>
+        </section>
 
-            <div class="competencia">
-                <img src="iconos/9.png" alt="SQL">
-                <div class="barra">
-                    <div class="progreso">SQL · 80%</div>
+        <!-- IDIOMAS Y VEHÍCULO -->
+        <section class="seccion">
+            <h2 class="section-title">Idiomas y Otros Datos</h2>
+            <div class="grid-3">
+                <div class="card text-center">
+                    <img src="assets/iconos/12.png" alt="Inglés" class="card-icon">
+                    <h3>Inglés</h3>
+                    <p><strong>B2 (Mención Univ.)</strong></p>
+                </div>
+                <div class="card text-center">
+                    <img src="assets/iconos/13.png" alt="Japonés" class="card-icon">
+                    <h3>Japonés</h3>
+                    <p><strong>A2</strong></p>
+                </div>
+                <div class="card text-center">
+                    <img src="assets/iconos/14.png" alt="Carnet" class="card-icon">
+                    <h3>Carnet de conducir</h3>
+                    <p><strong>Tipo B</strong></p>
                 </div>
             </div>
+        </section>
 
-            <div class="competencia">
-                <img src="iconos/10.png" alt="Python">
-                <div class="barra">
-                    <div class="progreso">Python · 80%</div>
+        <!-- EXPERIENCIA LABORAL -->
+        <section id="experiencia" class="seccion">
+            <h2 class="section-title">Experiencia Laboral</h2>
+            <div class="grid-3">
+                <div class="card text-center">
+                    <img src="assets/iconos/8.png" alt="Auxiliar administrativo" class="card-icon">
+                    <h3>Auxiliar de Justicia</h3>
+                    <p class="timeline-date">Granada · 2020 – 2023</p>
+                    <p class="timeline-desc">Gestión y revisión de documentación legal, agenda y archivos.</p>
+                </div>
+                <div class="card text-center">
+                    <img src="assets/iconos/2.png" alt="Cuidador" class="card-icon">
+                    <h3>Cuidador (Mayores)</h3>
+                    <p class="timeline-date">Granada · 2017 – 2021</p>
+                    <p class="timeline-desc">Asistencia personal, atención básica y acompañamiento emocional.</p>
+                </div>
+                <div class="card text-center">
+                    <img src="assets/iconos/3.png" alt="Profesor" class="card-icon">
+                    <h3>Profesor Particular</h3>
+                    <p class="timeline-date">Granada · 2015 – 2017</p>
+                    <p class="timeline-desc">Refuerzo educativo y seguimiento personalizado.</p>
                 </div>
             </div>
+        </section>
 
-            <div class="competencia">
-                <img src="iconos/11.png" alt="HTML">
-                <div class="barra">
-                    <div class="progreso">HTML · 80%</div>
+        <!-- FORMACIÓN -->
+        <section id="formacion" class="seccion">
+            <h2 class="section-title">Formación Académica</h2>
+            <div class="grid-2">
+                <div class="card text-center">
+                    <img src="assets/iconos/7.png" alt="ITG" class="card-icon">
+                    <h3>Diseño de Aplicaciones Web</h3>
+                    <p class="timeline-date">FP · Titulado (C.F.G.S.)</p>
+                </div>
+                <div class="card text-center">
+                    <img src="assets/iconos/6.png" alt="Curso SQL IBM" class="card-icon">
+                    <h3>Curso Certificado SQL</h3>
+                    <p class="timeline-date">IBM SkillsBuild · 2024</p>
+                </div>
+                <div class="card text-center">
+                    <img src="assets/iconos/4.png" alt="Videojuegos" class="card-icon">
+                    <h3>Desarrollo de Videojuegos</h3>
+                    <p class="timeline-date">Arcan Studios · 520h (2016-2017)</p>
+                </div>
+                <div class="card text-center">
+                    <img src="assets/iconos/5.png" alt="Grado en Educación Primaria" class="card-icon">
+                    <h3>Grado en Educación Primaria</h3>
+                    <p class="timeline-date">Universidad de Granada (2010-2015)</p>
                 </div>
             </div>
+        </section>
 
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Sergio López Aguado</h3>
+            <p>Desarrollador Web & Gestión Administrativa · Granada, España</p>
+            <div class="footer-links">
+                <a href="mailto:sergiolopezaguado.granada@gmail.com">✉️ sergiolopezaguado.granada@gmail.com</a>
+                <span>·</span>
+                <a href="CV_Sergio_Lopez_Aguado.pdf" download="CV_Sergio_Lopez_Aguado.pdf">📄 Descargar CV en PDF</a>
+            </div>
+            <p style="font-size: 0.85rem; opacity: 0.6; margin-top: 1rem;">© 2026 · Todos los derechos reservados</p>
         </div>
-    </section>
-
-    <!-- IDIOMAS Y VEHÍCULO -->
-    <section class="seccion">
-        <h2>Idiomas y vehículo</h2>
-
-        <div class="idiomas-grid">
-
-            <div class="idioma-card">
-                <img src="iconos/12.png" alt="Inglés">
-                <p align="center">Inglés<br><strong>B2</strong></p>
-            </div>
-
-            <div class="idioma-card">
-                <img src="iconos/13.png" alt="Japonés">
-                <p align="center">Japonés<br><strong>A2</strong></p>
-            </div>
-
-            <div class="idioma-card">
-                <img src="iconos/14.png" alt="Carnet">
-                <p align="center">Carnet de conducir<br><strong>B2</strong></p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- EXPERIENCIA LABORAL -->
-    <section id="experiencia" class="seccion">
-        <h2>Experiencia laboral</h2>
-
-        <div class="cards cards-3">
-
-            <div class="card">
-                <img src="iconos/8.png" alt="Auxiliar administrativo" class="card-img card-img-lg">
-                <h3 align="center">Auxiliar administrativo de Justicia</h3>
-                <p align="center"><strong>Granada</strong> · 2020 – 2023</p>
-                <p align="center">Gestión y revisión de documentación legal, agenda y archivos.</p>
-            </div>
-
-            <div class="card">
-                <img src="iconos/2.png" alt="Cuidador" class="card-img">
-                <h3 align="center">Cuidador de personas mayores</h3>
-                <p align="center"><strong>Granada</strong> · 2017 – 2021</p>
-                <p align="center">Asistencia personal, atención básica y acompañamiento emocional.</p>
-            </div>
-
-            <div class="card">
-                <img src="iconos/3.png" alt="Profesor" class="card-img">
-                <h3 align="center">Profesor particular de primaria</h3>
-                <p align="center"><strong>Granada</strong> · 2015 – 2017</p>
-                <p align="center">Refuerzo educativo y seguimiento personalizado.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- FORMACIÓN -->
-    <section id="formacion" class="seccion">
-        <h2>Formación</h2>
-
-        <div class="cards cards-2x2">
-
-            <div class="card">
-                <img src="iconos/4.png" alt="Auxiliar administrativo" class="card-img">
-                <h3 align="center">Desarrollo de Videojuegos</h3>
-                <p align="center">Arcan Studios · 520h</p>
-            </div>
-
-            <div class="card">
-                <img src="iconos/5.png" alt="Grado en Educación Primaria" class="card-img">
-                <h3 align="center">Grado en Educación Primaria</h3>
-                <p align="center">Universidad de Granada</p>
-            </div>
-
-            <div class="card">
-                <img src="iconos/6.png" alt="Curso SQL IBM" class="card-img">
-                <h3 align="center">Curso Certificado SQL</h3>
-                <p align="center">IBM SkillsBuild · 2024</p>
-            </div>
-
-            <div class="card card-center">
-                <img src="iconos/7.png" alt="ITG" class="card-img">
-                <h3 align="center">Diseño de Aplicaciones Web</h3>
-                <p align="center">FP · En curso (2025-2026)</p>
-            </div>
-
-        </div>
-    </section>
-
-</main>
-
-<footer>
-    <p>© 2026 · Sergio López Aguado</p>
-</footer>
+    </footer>
 
 </body>
-</html>
+
+ </html>

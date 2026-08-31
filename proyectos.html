@@ -1,151 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Proyectos</title>
+    <title>Proyectos - Sergio López Aguado</title>
+    <meta name="description" content="Portfolio y proyectos de desarrollo web de Sergio López Aguado.">
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1JH2H4H5H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Y1JH2H4H5H');
+    </script>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="proyectos.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-
-<header>
-    <nav class="barra_navegacion">
-        <div class="logo">Sergio López Aguado</div>
-        <ul class="menu">
-            <li><a href="portfolio.html#inicio">Inicio</a></li>
-            <li><a href="portfolio.html#sobre-mi">Perfil profesional</a></li>
-            <li><a href="portfolio.html#competencias">Competencias</a></li>
-            <li><a href="portfolio.html#experiencia">Experiencia</a></li>
-            <li><a href="portfolio.html#formacion">Formación</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="https://github.com/SergioLA7?tab=repositories" target="_blank">GitHub</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">SL</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Currículum</a></li>
+            <li><a href="proyectos.html" class="active">Proyectos</a></li>
         </ul>
     </nav>
-</header>
 
-<main class="contenedor-proyectos">
+    <main class="container">
+        <h1 class="section-title">Mis Proyectos</h1>
 
-    <h1 class="titulo-seccion">Mis Proyectos</h1>
+        <div class="projects-grid">
+            <!-- Proyecto 1: Shadowverse -->
+            <article class="card project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/captura_web_SW.png" alt="Shadowverse Worlds Beyond" class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3>Shadowverse Worlds Beyond</h3>
+                    <div class="badges-container">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Academia Web</span>
+                    </div>
+                    <p class="project-desc">Página Web simulada de una Plataforma académica interactiva para un juego de
+                        cartas. Incluye cursos
+                        estructurados por rangos (Beginner a Grand Master), guías de clases, catálogo de cartas e
+                        información de las últimas expansiones.</p>
+                    <div class="project-actions">
+                        <a href="https://shadowversewb.netlify.app/" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">🚀 Ver Web</a>
+                    </div>
+                </div>
+            </article>
 
-    <div class="grid-proyectos">
+            <!-- Proyecto 2: Aventura y Destino -->
+            <article class="card project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/captura_web_AyD.png" alt="Aventura y Destino" class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3>Aventura y Destino (TFG)</h3>
+                    <div class="badges-container">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Juego TCG / RPG</span>
+                    </div>
+                    <p class="project-desc">Página Web simulada de una Plataforma informativa para un juego de cartas
+                        táctico medieval imaginario. Incluye secciones de cómo jugar, galeria de cartas y posible login
+                        para tener usuario registrado (con capacidad de conexión a una base de datos en donde guardar
+                        los usuarios en donde mantener un registro de victorias, derrotas y empates) con el que poder
+                        entrar y descargar el juego desde la propia pagina web.</p>
+                    <div class="project-actions">
+                        <a href="https://aventuraydestino.netlify.app/" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">🚀 Ver Web</a>
+                    </div>
+                </div>
+            </article>
 
-        <!-- Proyecto 1 -->
-        <div class="proyecto">
-            <div class="imagen-proyecto1">
-                <img src="imagenesProyectos/duel.png" alt="Shadow Duel">
-            </div>
-            <h2 class="titulo-proyecto" align="center">Shadow Duel!</h2>
-            <p class="descripcion-proyecto" align="center">
-                Primer proyecto en el que simulo un pequeño juego de cartas contra la máquina.
-            </p>
-            <a href="https://github.com/SergioLA7/P01-shadow-duel" class="boton-proyecto" align="center">Ver Proyecto</a>
+            <!-- Proyecto 3: Próximo Proyecto -->
+            <article class="card project-card">
+                <div class="project-image-wrapper">
+                    <img src="assets/proximo_proyecto.png" alt="Próximo Proyecto Aquí" class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3>Próximo Proyecto Aquí</h3>
+                    <div class="badges-container">
+                        <span class="badge">En Desarrollo</span>
+                    </div>
+                    <p class="project-desc">Espacio reservado para el desarrollo de nuevos proyectos web y aplicaciones.
+                        Iré actualizando la página web con cada nuevo proyecto que vaya realizando.
+                        ¡Vuelve pronto para ver más novedades!</p>
+                </div>
+            </article>
         </div>
+    </main>
 
-        <!-- Proyecto 2 -->
-        <div class="proyecto">
-            <div class="imagen-proyecto2">
-                <img src="imagenesProyectos/OP.png" alt="Cartas OP">
+    <footer>
+        <div class="footer-content">
+            <h3>Sergio López Aguado</h3>
+            <p>Desarrollador Web & Gestión Administrativa · Granada, España</p>
+            <div class="footer-links">
+                <a href="mailto:sergiolopezaguado.granada@gmail.com">✉️ sergiolopezaguado.granada@gmail.com</a>
+                <span>·</span>
+                <a href="CV_Sergio_Lopez_Aguado.pdf" download="CV_Sergio_Lopez_Aguado.pdf">📄 Descargar CV en PDF</a>
             </div>
-            <h2 class="titulo-proyecto" align="center">Tienda de cartas Yu-Gi-Oh! (Cartas OP)</h2>
-            <p class="descripcion-proyecto" align="center">
-                Simulación de una tienda de cartas basada en la temática Yu-Gi-Oh!
-            </p>
-            <a href="https://github.com/SergioLA7/P02---Cartas-OP" class="boton-proyecto" align="center">Ver Proyecto</a>
+            <p style="font-size: 0.85rem; opacity: 0.6; margin-top: 1rem;">© 2026 · Todos los derechos reservados</p>
         </div>
-
-        <!-- Proyecto 3 -->
-        <div class="proyecto">
-            <div class="imagen-proyecto">
-                <img src="imagenesProyectos/corrector.png" alt="Corrector de exámenes">
-            </div>
-            <h2 class="titulo-proyecto" align="center">Corrector de exámenes</h2>
-            <p class="descripcion-proyecto" align="center">
-                Programa para corregir exámenes a partir de los datos introducidos.
-            </p>
-            <a href="https://github.com/SergioLA7/P03---Corrector-ex-menes" class="boton-proyecto" align="center">Ver Proyecto</a>
-        </div>
-
-        <!-- Proyecto 4 -->
-        <div class="proyecto">
-            <div class="imagen-proyecto">
-                <img src="imagenesProyectos/biblioteca.png" alt="Biblioteca">
-            </div>
-            <h2 class="titulo-proyecto" align="center">Biblioteca</h2>
-            <p class="descripcion-proyecto" align="center">
-                Gestión básica de una librería mediante programación.
-            </p>
-            <a href="https://github.com/SergioLA7/P04---Biblioteca" class="boton-proyecto" align="center">Ver Proyecto</a>
-        </div>
-
-        <!-- Proyecto 5 -->
-        <div class="proyecto">
-            <div class="imagen-proyecto">
-                <img src="imagenesProyectos/triatlon.png" alt="Gestión de Triatlón">
-            </div>
-            <h2 class="titulo-proyecto" align="center">Gestión de Triatlón</h2>
-            <p class="descripcion-proyecto" align="center">
-                Gestión de participantes, resultados y modificaciones de un triatlón.
-            </p>
-            <a href="https://github.com/SergioLA7/P05---Gestor-Triatlon" class="boton-proyecto" align="center">Ver Proyecto</a>
-        </div>
-
-        <!-- Proyecto 6 -->
-        <div class="proyecto">
-            <div class="imagen-proyecto">
-                <img src="imagenesProyectos/casino.png" alt="Proyecto Casino">
-            </div>
-            <h2 class="titulo-proyecto" align="center">Proyecto Casino</h2>
-            <p class="descripcion-proyecto" align="center">
-                Simulación de varios juegos de casino como blackjack y tragaperras.
-            </p>
-            <a href="https://github.com/SergioLA7/P06---PROYECTO-CASINO" class="boton-proyecto" align="center">Ver Proyecto</a>
-        </div>
-
-        <!-- Proyecto 7 -->
-        <div class="proyecto">
-            <div class="imagen-proyecto">
-                <img src="imagenesProyectos/1.webp" alt="Guardería Pokémon">
-            </div>
-            <h2 class="titulo-proyecto" align="center">Gestión de Guardería Pokémon</h2>
-            <p class="descripcion-proyecto" align="center">
-                Gestión de clientes, Pokémon y empleados en una guardería Pokémon.
-            </p>
-            <a href="https://github.com/SergioLA7/P07---Guarder-a-Pok-mon" class="boton-proyecto" align="center">Ver Proyecto</a>
-        </div>
-
-        <!-- Proyecto 8 -->
-        <div class="proyecto">
-            <div class="imagen-proyecto">
-                <img src="imagenesProyectos/panaderia.png" alt="Proyecto 8">
-            </div>
-            <h2 class="titulo-proyecto" align="center">Pagina Web Panadería</h2>
-            <p class="descripcion-proyecto" align="center">
-                Primer proyecto completo, cuyo tema principal era una panadería. Aún con un tono jocoso y cómico, se busca parecer lo más posible a una página web real de un negocio cualquiera.
-            </p>
-            <a href="#" class="boton-proyecto" align="center">Ver Proyecto</a>
-        </div>
-
-        <!-- Proyecto 9 -->
-        <div class="proyecto">
-            <div class="imagen-proyecto">
-                <img src="imagenesProyectos/shadowverse.png" alt="Proyecto 9">
-            </div>
-            <h2 class="titulo-proyecto" align="center">Pagina Web Shadowverse</h2>
-            <p class="descripcion-proyecto" align="center">
-                Página web centrada en el juego de cartas online Shadowverse Worlds Beyond, adaptado al tema de hacer una escuela para el juego. También contiene una galería de cartas interactiva de las cartas más recientes que había hasta el momento.
-            </p>
-            <a href="#" class="boton-proyecto" align="center">Ver Proyecto</a>
-        </div>
-
-    </div>
-</main>
-
-<footer>
-    <p>© 2026 · Sergio López Aguado</p>
-</footer>
-
+    </footer>
 </body>
+
 </html>
