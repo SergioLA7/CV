@@ -1,0 +1,128 @@
+/* ===============================
+   CONTENEDOR GENERAL
+=============================== */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* fuerza que el main ocupe el espacio disponible */
+}
+
+/* ===============================
+   CONTENEDOR CONTACTO
+=============================== */
+.contenedor-contacto {
+    max-width: 900px;
+    margin: 80px auto 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* ===============================
+   TÍTULO
+=============================== */
+.titulo-seccion {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.titulo-seccion::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #10519c;
+    margin: 15px auto;
+}
+
+/* ===============================
+   FORMULARIO
+=============================== */
+.formulario-contacto {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #10519c;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #10519c;
+    box-shadow: 0 0 5px rgba(16,81,156,0.3);
+}
+
+/* BOTÓN */
+.boton-enviar {
+    margin-top: auto;
+    padding: 12px 20px;
+    background-color: #10519c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #0d3e7a;
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+footer {
+    background-color: #10519c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* siempre pegado abajo */
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 768px) {
+    .titulo-seccion {
+        font-size: 2rem;
+    }
+
+    .formulario-contacto {
+        padding: 30px 20px;
+    }
+}

@@ -1,0 +1,262 @@
+/* ===============================
+   RESET Y TIPOGRAFÍA
+=============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-padding-top: 80px; /* evita que el nav tape los anchors */
+}
+
+body {
+    background-color: #dbe8f5;
+    color: #2c2c2c;
+}
+
+/* ===============================
+   NAV
+=============================== */
+.barra_navegacion {
+    background-color: #10519c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===============================
+   HERO MODERNO
+=============================== */
+.hero-card {
+    background-color: #c7d9ef;
+    padding: 60px 20px;
+}
+
+.hero-contenido {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    border-radius: 18px;
+    padding: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Hero texto */
+.hero-texto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-texto span {
+    color: #10519c;
+}
+
+.hero-descripcion {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Hero imagen */
+.hero-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marco-imagen {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #10519c;
+}
+
+.marco-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===============================
+   SECCIONES GENERALES
+=============================== */
+.seccion {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.seccion h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #10519c;
+    margin-bottom: 30px;
+}
+
+/* ===============================
+   PERFIL PROFESIONAL
+=============================== */
+.sobre-mi {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ===============================
+   COMPETENCIAS
+=============================== */
+.competencias {
+    max-width: 750px;
+    margin: auto;
+    display: grid;
+    gap: 25px;
+}
+
+.competencia {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.competencia img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.barra {
+    flex: 1;
+    background-color: #000;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progreso {
+    width: 80%;
+    background-color: #10519c;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* ===============================
+   IDIOMAS
+=============================== */
+.idiomas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    text-align: center;
+}
+
+.idioma-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.idioma-card img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   TARJETAS (EXPERIENCIA Y FORMACIÓN)
+=============================== */
+.cards {
+    display: grid;
+    gap: 25px;
+}
+
+.cards-3 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.cards-2x2 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    line-height: 1.6;
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+footer {
+    background-color: #10519c;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 80px;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 768px) {
+    .hero-contenido {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-imagen {
+        margin-bottom: 30px;
+    }
+}
+
+/* ===============================
+   IMÁGENES DE TARJETAS
+=============================== */
+.card-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.card-img-lg {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    background-color: #fff;
+}
+
+.card-center {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
